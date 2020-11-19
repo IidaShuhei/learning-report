@@ -11,7 +11,7 @@
                         <a href="{{ route('teacherIndex') }}" class="btn btn-primary btn-lg btn-block">教員</a>
                     </div>
                     <div class="pb-3">
-                        <button type="button" class="btn btn-primary btn-lg btn-block">生徒</button>
+                        <a href="{{ route('classDetail') }}" class="btn btn-primary btn-lg btn-block">生徒</a>
                     </div>
                     <div class="pb-3">
                         <button type="button" class="btn btn-primary btn-lg btn-block">科目の設定</button>
