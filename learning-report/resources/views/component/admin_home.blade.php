@@ -1,7 +1,3 @@
-@extends('layouts.app')
-
-@section('content')
-@if($user->status === 1)
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-12">
@@ -12,7 +8,7 @@
                         <a href="{{ url('/teacher/index') }}" class="btn btn-primary btn-lg btn-block">教員</a>
                     </div>
                     <div class="pb-3">
-                        <a href="{{ url('/class/detail') }}" class="btn btn-primary btn-lg btn-block">生徒</a>
+                        <button type="button" class="btn btn-primary btn-lg btn-block">生徒</button>
                     </div>
                     <div class="pb-3">
                         <button type="button" class="btn btn-primary btn-lg btn-block">科目の設定</button>
@@ -44,16 +40,3 @@
                 </div>
             </div>
         </div>
-    </div>
-</div>
-@endif
-
-@if($user->status === 2)
-@endif
-
-@if($user->status === 3)
-@endif
-
-@if($user->status === 4)
-@endif
-@endsection
