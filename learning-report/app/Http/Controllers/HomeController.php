@@ -23,6 +23,37 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('home');
+        $user = \Auth::user();
+
+        return view('home', ['user' => $user]);
     }
+
+
+    DB::table('users')->insert(
+        [
+            'name' => 'システム管理者',
+            'email' => 'system@gmail.com',
+            'password' => 'password',
+            'status' => 0,
+    ],
+     [
+            'name' => '教員',
+            'email' => 'teacher@gmail.com',
+            'password' => 'password',
+            'status' => 1,
+    ],
+     [
+            'name' => '学生',
+            'email' => 'student@gmail.com',
+            'password' => 'password',
+            'status' => 2,
+    ],
+     [
+            'name' => '教員',
+            'email' => 'teacher@gmail.com',
+            'password' => 'password',
+            'status' => 1,
+    ],
+
+);
 }

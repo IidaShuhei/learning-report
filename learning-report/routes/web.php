@@ -20,14 +20,14 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
-Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
 
 //管理者
-Route::get('/teacher_index', 'AdminController@teacherIndex')->name('teacherIndex');
-Route::get('/teacher_detail', 'AdminController@teacherDetail')->name('teacherDetail');
-Route::get('/teacher_edit', 'AdminController@teacherEdit')->name('teacherEdit');
+Route::prefix('/teacher')->group(function () {
+    Route::get('/index', 'AdminController@teacherIndex')->name('teacherIndex');
+    Route::get('/detail', 'AdminController@teacherDetail')->name('teacherDetail');
+    Route::get('/edit', 'AdminController@teacherEdit')->name('teacherEdit');
+});
 Route::get('/class_detail', 'AdminController@classDetail')->name('classDetail');
 Route::get('/student_detail', 'AdminController@studentDetail')->name('studentDetail');
 Route::get('/student_edit', 'AdminController@studentEdit')->name('studentEdit');
