@@ -1,6 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
+@if($user->status === 1)
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-12">
@@ -8,10 +9,10 @@
                 <div class="card-body">
                     <!-- componentにわけてここにのせれば、一枚ですむかも -->
                     <div class="pb-3">
-                        <a href="{{ route('teacherIndex') }}" class="btn btn-primary btn-lg btn-block">教員</a>
+                        <a href="{{ url('/teacher/index') }}" class="btn btn-primary btn-lg btn-block">教員</a>
                     </div>
                     <div class="pb-3">
-                        <a href="{{ route('classDetail') }}" class="btn btn-primary btn-lg btn-block">生徒</a>
+                        <a href="{{ url('/class/detail') }}" class="btn btn-primary btn-lg btn-block">生徒</a>
                     </div>
                     <div class="pb-3">
                         <button type="button" class="btn btn-primary btn-lg btn-block">科目の設定</button>
@@ -43,5 +44,16 @@
                 </div>
             </div>
         </div>
+    </div>
+</div>
+@endif
 
-        @endsection
+@if($user->status === 2)
+@endif
+
+@if($user->status === 3)
+@endif
+
+@if($user->status === 4)
+@endif
+@endsection

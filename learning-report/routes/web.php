@@ -24,10 +24,21 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
-//管理者
-Route::get('/teacher_index', 'AdminController@teacherIndex')->name('teacherIndex');
-Route::get('/teacher_detail', 'AdminController@teacherDetail')->name('teacherDetail');
-Route::get('/teacher_edit', 'AdminController@teacherEdit')->name('teacherEdit');
-Route::get('/class_detail', 'AdminController@classDetail')->name('classDetail');
-Route::get('/student_detail', 'AdminController@studentDetail')->name('studentDetail');
-Route::get('/student_edit', 'AdminController@studentEdit')->name('studentEdit');
+//教員
+Route::prefix('/teacher')->group(function () {
+    Route::get('/index', 'TeacherController@teacherIndex');
+    Route::get('/detail', 'TeacherController@teacherDetail');
+    Route::get('/edit', 'TeacherController@teacherEdit');
+});
+
+//生徒
+Route::prefix('/student')->group(function () {
+    Route::get('/index', 'StudentController@studentIndex');
+    Route::get('/detail', 'StudentController@studentDetail');
+    Route::get('/edit', 'StudentController@studentEdit');
+});
+
+//クラス
+Route::prefix('/class')->group(function () {
+    Route::get('/detail', 'ClassController@classDetail');
+});
