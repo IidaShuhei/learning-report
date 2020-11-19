@@ -8,7 +8,7 @@
                 <div class="card-body">
                     <!-- componentにわけてここにのせれば、一枚ですむかも -->
                     <div class="pb-3">
-                        <button type="button" class="btn btn-primary btn-lg btn-block">教員</button>
+                        <a href="{{ route('teacherIndex') }}" class="btn btn-primary btn-lg btn-block">教員</a>
                     </div>
                     <div class="pb-3">
                         <button type="button" class="btn btn-primary btn-lg btn-block">生徒</button>
