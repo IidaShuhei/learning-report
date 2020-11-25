@@ -5,19 +5,18 @@
     <div class="row justify-content-center">
         <div class="col-md-12">
             <div class="card">
+              <h5 class="card-header">教員一覧</h5>
                 <div class="card-body">
                   <div class="dropdown">
-                    教員一覧
-                    <button class="btn btn-secondary dropdown-toggle btn-sm" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                      教科を選択
-                    </button>
-                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                      <a class="dropdown-item" href="#">英語</a>
-                      <a class="dropdown-item" href="#">現代文</a>
-                      <a class="dropdown-item" href="#">数学</a>
+                    <div class="form-group">
+                      <select class="form-control">
+                        <option>教科を選択してください</option>
+                        <option>英語</option>
+                        <option>日本史</option>
+                        <option>数学</option>
+                      </select>
                     </div>
                   </div>
-                  <br>
                   <table class="table table-hover">
                     <thead>
                       <tr>
@@ -26,17 +25,17 @@
                         <th scope="col">担当教科</th>
                         <th scope="col">校務分掌</th>
                         <th scope="col">部活</th>
-                        <th scope="col">編集</th>
+                        <th scope="col">削除</th>
                       </tr>
                     </thead>
                     <tbody>
                       <tr>
-                        <th scope="row"><a href="{{ url('/teacher/detail') }}">飯田</a></th>
+                        <th scope="row"><a href="{{ url('/teacher/edit') }}">飯田</a></th>
                         <td><a href="{{ url('/class/detail') }}">3年1組</a></td>
                         <td>英語</td>
                         <td>広報</td>
                         <td>テニス</td>
-                        <td><a href="{{ url('/teacher/edit') }}">編集</a></td>
+                        <td><button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#deleteTeacher">削除</button></td>
                       </tr>
                       <tr>
                         <th scope="row">山田</th>
@@ -44,7 +43,7 @@
                         <td>数学</td>
                         <td>広報</td>
                         <td>テニス</td>
-                        <td>編集</td>
+                        <td>削除</td>
                       </tr>
                       <tr>
                         <th scope="row">藤井</th>
@@ -60,11 +59,24 @@
                         <td>物理</td>
                         <td>広報</td>
                         <td>テニス</td>
-                        <td>編集</td>
+                        <td>削除</td>
                       </tr>
                     </tbody>
                   </table>
                 </div>
+                
+                {{--  Modal  --}}
+              @component('component.modal')
+              @slot('modal_id', 'deleteTeacher')
+              @slot('modal_title', '飯田周平先生を削除しますか')
+              @slot('modal_body_class', '')
+              @slot('modal_body','削除する前に間違っていないかもう一度確認してください')
+              @slot('modal_btn1_class','btn-secondary')
+              @slot('modal_btn2_class','btn-danger')
+              @slot('modal_btn1','閉じる')
+              @slot('modal_btn2','削除')
+            @endcomponent
+
             </div>
           </div>
         </div>

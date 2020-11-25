@@ -12,7 +12,7 @@ class ClassController extends Controller
      * @param int $id
      * @return view
      */
-    public function classDetail()
+    public function detail()
     {
         // $class = Class::find($id)
         return view('class.detail');

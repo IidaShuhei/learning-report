@@ -5,8 +5,8 @@
     <div class="row justify-content-center">
         <div class="col-md-12">
             <div class="card">
+              <h5 class="card-header">飯田周平先生</h5>
                 <div class="card-body">
-                  <h4>飯田周平先生</h4>
                   <table class="table table-hover">
                     <tbody>
                       <tr>

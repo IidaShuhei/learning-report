@@ -15,7 +15,7 @@
                         <a href="{{ url('/class/detail') }}" class="btn btn-primary btn-lg btn-block">生徒</a>
                     </div>
                     <div class="pb-3">
-                        <button type="button" class="btn btn-primary btn-lg btn-block">科目の設定</button>
+                        <a href="{{ url('/subject/edit') }}" class="btn btn-primary btn-lg btn-block">科目の設定</a>
                     </div>
                     <div class="pb-3">
                         <button type="button" class="btn btn-primary btn-lg btn-block">担当教科・担当クラスの登録</button>

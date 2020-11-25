@@ -11,7 +11,7 @@ class TeacherController extends Controller
      *
      * @return view
      */
-    public function teacherIndex()
+    public function index()
     {
         return view('teacher.index');
     }
@@ -22,7 +22,7 @@ class TeacherController extends Controller
      * @param int $id
      * @return view
      */
-    public function teacherDetail()
+    public function detail()
     {
         // $teacher = Teacher::find($id)
         return view('teacher.detail');
@@ -35,7 +35,7 @@ class TeacherController extends Controller
      * @param int $id
      * @return view
      */
-    public function teacherEdit()
+    public function edit()
     {
         // $teacher = Teacher::find($id)
         return view('teacher.edit');

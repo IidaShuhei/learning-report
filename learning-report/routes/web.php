@@ -23,9 +23,9 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 //教員
 Route::prefix('/teacher')->group(function () {
-    Route::get('/index', 'TeacherController@teacherIndex');
-    Route::get('/detail', 'TeacherController@teacherDetail');
-    Route::get('/edit', 'TeacherController@teacherEdit');
+    Route::get('/index', 'TeacherController@index');
+    Route::get('/detail', 'TeacherController@detail');
+    Route::get('/edit', 'TeacherController@edit');
 });
 
 //生徒
@@ -37,5 +37,10 @@ Route::prefix('/student')->group(function () {
 
 //クラス
 Route::prefix('/class')->group(function () {
-    Route::get('/detail', 'ClassController@classDetail');
+    Route::get('/detail', 'ClassController@detail');
+});
+
+//教科
+Route::prefix('/subject')->group(function () {
+    Route::get('/edit', 'SubjectController@edit');
 });
