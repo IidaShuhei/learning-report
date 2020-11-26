@@ -30,7 +30,7 @@
                     <tbody>
                       <tr>
                         <th scope="row">1</th>
-                        <td><a href="{{ url('/student/edit') }}">平岡ゆり</a></td>
+                        <td><a href="{{ url('/student/detail') }}">平岡ゆり</a></td>
                         <td>女性</td>
                         <td>サッカー</td>
                         <td><button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#deleteStudent">削除</button></td>
@@ -75,6 +75,7 @@
                 @slot('modal_body','削除する前に間違っていないかもう一度確認してください')
                 @slot('modal_btn1_class','btn-secondary')
                 @slot('modal_btn2_class','btn-danger')
+                @slot('modal_url','/student/delete')
                 @slot('modal_btn1','閉じる')
                 @slot('modal_btn2','削除')
               @endcomponent

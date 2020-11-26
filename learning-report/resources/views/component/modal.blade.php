@@ -10,7 +10,7 @@
       <div class="modal-body {{ !empty($modal_body_class) ? $modal_body_class : '' }}">{{ !empty($modal_body) ? $modal_body : '' }}</div>
       <div class="modal-footer">
         <button type="button" class="btn {{ !empty($modal_btn1_class) ? $modal_btn1_class : '' }}" data-dismiss="modal">{{ $modal_btn1 }}</button>
-        <button type="button" class="btn {{ !empty($modal_btn2_class) ? $modal_btn2_class : '' }}">{{ $modal_btn2 }}</button>
+        <a href="{{ url($modal_url) }}" class="btn {{ !empty($modal_btn2_class) ? $modal_btn2_class : '' }}">{{ $modal_btn2 }}</a>
       </div>
     </div>
   </div>

@@ -10,7 +10,7 @@ class StudentController extends Controller
     /**
      * 生徒詳細を表示する.
      *
-     * @param int $id
+     * @param Request $request
      * @return view
      */
     public function detail(Request $request)
@@ -27,15 +27,28 @@ class StudentController extends Controller
     }
 
     /**
-     * 生徒編集画面を表示する.
+     * 生徒を編集する.
      *
-     * @param int $id
+     * @param Request $request
      * @return view
      */
-    public function edit()
+    public function edit(Request $request)
     {
         // $student = Student::find($id)
-        return view('student.edit');
+        return redirect('/home')->with('success','編集が完了しました');
+        // return view('admin.student_edit', ["student" => $student]);
+    }
+
+    /**
+     * 生徒を削除する.
+     *
+     * @param Request $request
+     * @return view
+     */
+    public function delete(Request $request)
+    {
+        // $student = Student::find($id)
+        return redirect('/home')->with('success','編集が完了しました');
         // return view('admin.student_edit', ["student" => $student]);
     }
 

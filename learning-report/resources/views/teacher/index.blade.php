@@ -30,7 +30,7 @@
                     </thead>
                     <tbody>
                       <tr>
-                        <th scope="row"><a href="{{ url('/teacher/edit') }}">飯田</a></th>
+                        <th scope="row"><a href="{{ url('/teacher/detail') }}">飯田</a></th>
                         <td><a href="{{ url('/class/detail') }}">3年1組</a></td>
                         <td>英語</td>
                         <td>広報</td>
@@ -64,18 +64,19 @@
                     </tbody>
                   </table>
                 </div>
-                
-                {{--  Modal  --}}
+
+              {{--  Modal  --}}
               @component('component.modal')
-              @slot('modal_id', 'deleteTeacher')
-              @slot('modal_title', '飯田周平先生を削除しますか')
-              @slot('modal_body_class', '')
-              @slot('modal_body','削除する前に間違っていないかもう一度確認してください')
-              @slot('modal_btn1_class','btn-secondary')
-              @slot('modal_btn2_class','btn-danger')
-              @slot('modal_btn1','閉じる')
-              @slot('modal_btn2','削除')
-            @endcomponent
+                @slot('modal_id', 'deleteTeacher')
+                @slot('modal_title', '飯田周平先生を削除しますか')
+                @slot('modal_body_class', '')
+                @slot('modal_body','削除する前に間違っていないかもう一度確認してください')
+                @slot('modal_btn1_class','btn-secondary')
+                @slot('modal_btn2_class','btn-danger')
+                @slot('modal_url','/teacher/delete')
+                @slot('modal_btn1','閉じる')
+                @slot('modal_btn2','削除')
+              @endcomponent
 
             </div>
           </div>
