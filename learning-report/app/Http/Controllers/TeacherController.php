@@ -76,4 +76,15 @@ class TeacherController extends Controller
         return redirect('/home')->with('success','作成が完了しました');
     }
 
+    /**
+     * メッセージを送信する.
+     *
+     * @param Request
+     * @return view
+     */
+    public function submitMessage(Request $request)
+    {
+        return redirect('/home')->with('success','送信が完了しました');
+    }
+
 }

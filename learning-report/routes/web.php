@@ -9,7 +9,9 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
-Route::get('/show_message_list', 'ShowMessageListController@index');
+Route::get('/show_message_list', 'MessageController@index');
+Route::get('/message_detail', 'MessageController@detail');
+Route::get('/to_create_message', 'MessageController@toCreateMessage');
 
 //教員
 Route::prefix('/teacher')->group(function () {
@@ -19,6 +21,7 @@ Route::prefix('/teacher')->group(function () {
     Route::get('/edit', 'TeacherController@edit');
     Route::get('/to_info_view', 'TeacherController@toInfoView');
     Route::get('/create_info', 'TeacherController@createInfo');
+    Route::get('/submit_message', 'TeacherController@submitMessage');
 });
 
 //生徒

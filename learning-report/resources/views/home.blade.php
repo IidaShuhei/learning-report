@@ -52,7 +52,7 @@
                     @if($user->status === 2)
                     <h5>３年２組<span class="pl-5"><a href="{{ url('/teacher/detail') }}">飯田先生</a></span></h5>
                     <br>
-                    <table class="table table-hover">
+                    <table class="table table-hover table-bordered">
                     <tbody>
                       <tr>
                         <td><a href="{{ url('/student/detail') }}">平岡ゆり</a></td>
@@ -96,6 +96,38 @@
                       </tr>
                     </tbody>
                   </table>
+                  <br>
+                  <div class="news">
+                        <h3>教員からの連絡</h3>
+                        <table class="table table-borderless">
+                            <tbody>
+                                <tr>
+                                    <th scope="row">2020/11/18 16:40</th>
+                                    <td>英語表現II</td>
+                                    <td>飯田先生</td>
+                                    <td><a href="#">11/20までの提出物について</a></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">2020/11/16 18:00</th>
+                                    <td>現代文</td>
+                                    <td>高橋先生</td>
+                                    <td><a href="#">中間テストのテスト範囲について</a></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">2020/11/15 16:00</th>
+                                    <td>数学II</td>
+                                    <td>井上先生</td>
+                                    <td><a href="#">今日の宿題について</a></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">2020/11/10 15:00</th>
+                                    <td>物理</td>
+                                    <td>山口先生</td>
+                                    <td><a href="#">明日の実験で使うものについて</a></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
                     @endif
                     
                     {{--  生徒ログイン後  --}}

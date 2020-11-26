@@ -1,0 +1,30 @@
+.body {
+    height: 500px;
+    overflow-y: scroll;
+}
+a {
+    text-decoration: none;
+}
+.box {
+    border: 2px black solid;
+    border-radius: 1em;
+    padding: 10px;
+}
+.input {
+    padding-right: 0;
+}
+.submit {
+    padding-left: 0;
+}
+.text {
+    background-color: greenyellow;
+}
+.time {
+    position: absolute;
+    bottom: 0;
+}
+.mytime {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}

@@ -7,7 +7,6 @@
             <div class="card">
                 <h5 class="card-header">平岡ゆり</h5>
                 <div class="card-body">
-                  <h4>平岡ゆり</h4>
                   <table class="table table-hover">
                     <tbody>
                       <tr>
