@@ -11,38 +11,41 @@
                     <tbody>
                       <tr>
                         <th scope="row">ふりがな</a></th>
-                        <td>ひらおかゆり</td>
+                        <td><input type="text" class="form-control" placeholder="ひらおかゆり"></td>
                       </tr>
                       <tr>
                         <th scope="row">性別</th>
-                        <td>女性</td>
+                        <td><input type="text" class="form-control" placeholder="女性"></td>
                       </tr>
                       <tr>
                         <th scope="row">住所</th>
-                        <td>東京都港区</td>
+                        <td><input type="text" class="form-control" placeholder="東京都港区"></td>
                       </tr>
                       <tr>
                         <th scope="row">年齢</th>
-                        <td>18</td>
+                        <td><input type="text" class="form-control" placeholder="18"></td>
                       </tr>
                       <tr>
                         <th scope="row">1年次クラス</th>
-                        <td>1年2組</td>
+                        <td><input type="text" class="form-control" placeholder="1年2組"></td>
                       </tr>
                       <tr>
                         <th scope="row">2年次クラス</th>
-                        <td>2年2組</td>
+                        <td><input type="text" class="form-control" placeholder="2年2組"></td>
                       </tr>
                       <tr>
                         <th scope="row">3年次クラス</th>
-                        <td>3年2組</td>
+                        <td><input type="text" class="form-control" placeholder="3年2組"></td>
                       </tr>
                       <tr>
                         <th scope="row">部活動</th>
-                        <td>テニス部</td>
+                        <td><input type="text" class="form-control" placeholder="テニス部"></td>
                       </tr>
                     </tbody>
                   </table>
+                    <div class="pb-3">
+                      <a href="{{ url('/student/edit') }}" class="btn btn-primary btn-block">更新</a>
+                    </div>
                 </div>
             </div>
           </div>

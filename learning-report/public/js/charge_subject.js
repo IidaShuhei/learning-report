@@ -81,15 +81,15 @@
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 0);
+/******/ 	return __webpack_require__(__webpack_require__.s = 1);
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ "./resources/js/subject.js":
-/*!*********************************!*\
-  !*** ./resources/js/subject.js ***!
-  \*********************************/
+/***/ "./resources/js/charge_subject.js":
+/*!****************************************!*\
+  !*** ./resources/js/charge_subject.js ***!
+  \****************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
@@ -98,36 +98,24 @@ window.addEventListener("DOMContentLoaded", function () {
   $("#edit").hide();
   $("#editRadio").on("click", function () {
     $("#edit").show();
-    $("#add").hide();
+    $("#register").hide();
   });
-  $("#addRadio").on("click", function () {
+  $("#registerRadio").on("click", function () {
     $("#edit").hide();
-    $("#add").show();
+    $("#register").show();
   });
 });
 
 /***/ }),
 
-/***/ "./resources/sass/app.scss":
-/*!*********************************!*\
-  !*** ./resources/sass/app.scss ***!
-  \*********************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-// removed by extract-text-webpack-plugin
-
-/***/ }),
-
-/***/ 0:
-/*!*****************************************************************!*\
-  !*** multi ./resources/js/subject.js ./resources/sass/app.scss ***!
-  \*****************************************************************/
+/***/ 1:
+/*!**********************************************!*\
+  !*** multi ./resources/js/charge_subject.js ***!
+  \**********************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! /Users/iidashuhei/Desktop/learning-report/learning-report/resources/js/subject.js */"./resources/js/subject.js");
-module.exports = __webpack_require__(/*! /Users/iidashuhei/Desktop/learning-report/learning-report/resources/sass/app.scss */"./resources/sass/app.scss");
+module.exports = __webpack_require__(/*! /Users/iidashuhei/Desktop/learning-report/learning-report/resources/js/charge_subject.js */"./resources/js/charge_subject.js");
 
 
 /***/ })

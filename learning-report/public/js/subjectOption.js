@@ -81,55 +81,20 @@
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 0);
+/******/ 	return __webpack_require__(__webpack_require__.s = 1);
 /******/ })
 /************************************************************************/
-/******/ ({
-
-/***/ "./resources/js/subject.js":
-/*!*********************************!*\
-  !*** ./resources/js/subject.js ***!
-  \*********************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-window.addEventListener("DOMContentLoaded", function () {
-  //科目の設定
-  $("#edit").hide();
-  $("#editRadio").on("click", function () {
-    $("#edit").show();
-    $("#add").hide();
-  });
-  $("#addRadio").on("click", function () {
-    $("#edit").hide();
-    $("#add").show();
-  });
-});
-
-/***/ }),
-
-/***/ "./resources/sass/app.scss":
-/*!*********************************!*\
-  !*** ./resources/sass/app.scss ***!
-  \*********************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-// removed by extract-text-webpack-plugin
-
-/***/ }),
-
-/***/ 0:
-/*!*****************************************************************!*\
-  !*** multi ./resources/js/subject.js ./resources/sass/app.scss ***!
-  \*****************************************************************/
+/******/ ([
+/* 0 */,
+/* 1 */
+/*!*********************************************!*\
+  !*** multi ./resources/js/subjectOption.js ***!
+  \*********************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! /Users/iidashuhei/Desktop/learning-report/learning-report/resources/js/subject.js */"./resources/js/subject.js");
-module.exports = __webpack_require__(/*! /Users/iidashuhei/Desktop/learning-report/learning-report/resources/sass/app.scss */"./resources/sass/app.scss");
+!(function webpackMissingModule() { var e = new Error("Cannot find module '/Users/iidashuhei/Desktop/learning-report/learning-report/resources/js/subjectOption.js'"); e.code = 'MODULE_NOT_FOUND'; throw e; }());
 
 
 /***/ })
-
-/******/ });
+/******/ ]);

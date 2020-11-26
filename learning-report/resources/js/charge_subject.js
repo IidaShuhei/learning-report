@@ -4,11 +4,11 @@ window.addEventListener("DOMContentLoaded", function() {
 
     $("#editRadio").on("click", function() {
         $("#edit").show();
-        $("#add").hide();
+        $("#register").hide();
     });
 
-    $("#addRadio").on("click", function() {
+    $("#registerRadio").on("click", function() {
         $("#edit").hide();
-        $("#add").show();
+        $("#register").show();
     });
 });

@@ -11,42 +11,45 @@
                     <tbody>
                       <tr>
                         <th scope="row">ふりがな</a></th>
-                        <td>いいだしゅうへい</td>
+                        <td><input type="text" class="form-control" placeholder="いいだしゅうへい"></td>
                       </tr>
                       <tr>
                         <th scope="row">性別</th>
-                        <td>男性</td>
+                        <td><input type="text" class="form-control" placeholder="男性"></td>
                       </tr>
                       <tr>
                         <th scope="row">住所</th>
-                        <td>東京都港区</td>
+                        <td><input type="text" class="form-control" placeholder="東京都港区"></td>
                       </tr>
                       <tr>
                         <th scope="row">年齢</th>
-                        <td>28</td>
+                        <td><input type="text" class="form-control" placeholder="28"></td>
                       </tr>
                       <tr>
                         <th scope="row">今年度担任クラス</th>
-                        <td>3年2組</td>
+                        <td><input type="text" class="form-control" placeholder="3年2組"></td>
                       </tr>
                       <tr>
                         <th scope="row">今年度校務分掌</th>
-                        <td>広報</td>
+                        <td><input type="text" class="form-control" placeholder="広報"></td>
                       </tr>
                       <tr>
                         <th scope="row">担当教科</th>
-                        <td>英語</td>
+                        <td><input type="text" class="form-control" placeholder="英語"></td>
                       </tr>
                       <tr>
                         <th scope="row">今年度担当クラス</th>
-                        <td>1年2組、3年4組</td>
+                        <td><input type="text" class="form-control" placeholder="1年2組、3年4組"></td>
                       </tr>
                       <tr>
                         <th scope="row">今年度担当部活</th>
-                        <td>テニス部</td>
+                        <td><input type="text" class="form-control" placeholder="テニス部"></td>
                       </tr>
                     </tbody>
                   </table>
+                  <div class="pb-3">
+                    <a href="{{ url('/teacher/edit') }}" class="btn btn-primary btn-block">更新</a>
+                  </div>
                 </div>
             </div>
           </div>
