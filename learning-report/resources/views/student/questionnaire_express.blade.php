@@ -20,15 +20,14 @@
                                 </select>
                             </div>
                         </div>
-                        <div class="form-group row  pb-3">
-                            <label>　よかったところ</label>
+                        <div class="form-group pb-3">
+                            <label>よかったところ</label>
                             <textarea class="form-control" id="studyMethod" name="studyMethod[]" rows="3"></textarea>
                         </div>
-                        <div class="form-group row  pb-3">
-                            <label>　取り入れて欲しいところ</label>
+                        <div class="form-group pb-3">
+                            <label>反省点</label>
                             <textarea class="form-control " id="studyMethod" name="studyMethod[]" rows="3"></textarea>
                         </div>
-
                         <button type="submmit" class="btn btn-primary btn-lg btn-block">提出</button>
                     </form>
                 </div>

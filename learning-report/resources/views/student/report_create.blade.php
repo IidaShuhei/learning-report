@@ -11,82 +11,105 @@
                 <div class="card-body">
                     <form method="POST" action="{{ url('/student/report_create') }}">
                         {{csrf_field()}}
-                        <div class="form-group row">
-                            <div class="col-3">
-                                <input type="calender" class="form-control" id="year" name="year">
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label for="subject">科目</label>
-                            <select class="form-control" id="subject" 　name="subject[]">
-                                <option>英語</option>
-                                <option>国語</option>
-                                <option>体育</option>
-                                <option>数学</option>
-                                <option>化学</option>
-                            </select>
-                        </div>
-                        <div class="form-group">
-                            <label for="time">時間</label>
-                            <input type="number" class="form-control" id="time" name="time[]">
-                        </div>
-                        <div class="form-group">
-                            <label for="studyMethod">勉強方法</label>
-                            <textarea class="form-control" id="studyMethod" name="studyMethod[]" rows="3"></textarea>
-                        </div>
-                        <div class="form-group">
-                            <label for="experience">得たこと</label>
-                            <textarea class="form-control" id="experience" name="experience[]" rows="3"></textarea>
-                        </div>
-                        <hr>
-                        <div class="form-group">
-                            <label for="subject">科目</label>
-                            <select class="form-control" id="subject" 　name="subject[]">
-                                <option>英語</option>
-                                <option>国語</option>
-                                <option>体育</option>
-                                <option>数学</option>
-                                <option>化学</option>
-                            </select>
-                        </div>
-                        <div class="form-group">
-                            <label for="time">時間</label>
-                            <input type="number" class="form-control" id="time" name="time[]">
-                        </div>
-                        <div class="form-group">
-                            <label for="studyMethod">勉強方法</label>
-                            <textarea class="form-control" id="studyMethod" name="studyMethod[]" rows="3"></textarea>
-                        </div>
-                        <div class="form-group">
-                            <label for="experience">得たこと</label>
-                            <textarea class="form-control" id="experience" name="experience[]" rows="3"></textarea>
-                        </div>
-                        <hr>
-                        <div class="form-group">
-                            <label for="subject">科目</label>
-                            <select class="form-control" id="subject" 　name="subject[]">
-                                <option>英語</option>
-                                <option>国語</option>
-                                <option>体育</option>
-                                <option>数学</option>
-                                <option>化学</option>
-                            </select>
-                        </div>
-                        <div class="form-group">
-                            <label for="time">時間</label>
-                            <input type="number" class="form-control" id="time" name="time[]">
-                        </div>
-                        <div class="form-group">
-                            <label for="studyMethod">勉強方法</label>
-                            <textarea class="form-control" id="studyMethod" name="studyMethod[]" rows="3"></textarea>
-                        </div>
-                        <div class="form-group">
-                            <label for="experience">得たこと</label>
-                            <textarea class="form-control" id="experience" name="experience[]" rows="3"></textarea>
-                        </div>
-                        <button type="submmit" class="btn btn-primary btn-lg btn-block">提出</button>
-                    </form>
-                </div>
+                    <div class="col-3">
+                        <select class="form-control" id="period" 　name="period">
+                            <option>11月19日</option>
+                            <option>11月20日</option>
+                            <option>11月21日</option>
+                        </select>
+                    </div>
+                    <br>
+                <table class="table table-hover">
+                    <thead>
+                      <tr>
+                        <th scope="col">勉強したこと</th>
+                        <th scope="col">勉強時間</th>
+                        <th scope="col">勉強方法</th>
+                        <th scope="col">得たこと</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>
+                          <select class="form-control">
+                            <option>英語</option>
+                            <option>数学</option>
+                            <option>現代文</option>
+                          </select>
+                        </td>
+                        <td>
+                          <select class="form-control">
+                            <option>30分</option>
+                            <option>1時間</option>
+                            <option>1時間半</option>
+                            <option>2時間</option>
+                          </select>
+                        </td>
+                        <td><input type="text" class="form-control" placeholder="音読"></td>
+                        <td><input type="text" class="form-control" placeholder="英語のリズムをつかめました"></td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <select class="form-control">
+                            <option>英語</option>
+                            <option>数学</option>
+                            <option>現代文</option>
+                          </select>
+                        </td>
+                        <td>
+                          <select class="form-control">
+                            <option>30分</option>
+                            <option>1時間</option>
+                            <option>1時間半</option>
+                            <option>2時間</option>
+                          </select>
+                        </td>
+                        <td><input type="text" class="form-control" placeholder="音読"></td>
+                        <td><input type="text" class="form-control" placeholder="英語のリズムをつかめました"></td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <select class="form-control">
+                            <option>英語</option>
+                            <option>数学</option>
+                            <option>現代文</option>
+                          </select>
+                        </td>
+                        <td>
+                          <select class="form-control">
+                            <option>30分</option>
+                            <option>1時間</option>
+                            <option>1時間半</option>
+                            <option>2時間</option>
+                          </select>
+                        </td>
+                        <td><input type="text" class="form-control" placeholder="音読"></td>
+                        <td><input type="text" class="form-control" placeholder="英語のリズムをつかめました"></td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <select class="form-control">
+                            <option>英語</option>
+                            <option>数学</option>
+                            <option>現代文</option>
+                          </select>
+                        </td>
+                        <td>
+                          <select class="form-control">
+                            <option>30分</option>
+                            <option>1時間</option>
+                            <option>1時間半</option>
+                            <option>2時間</option>
+                          </select>
+                        </td>
+                        <td><input type="text" class="form-control" placeholder="音読"></td>
+                        <td><input type="text" class="form-control" placeholder="英語のリズムをつかめました"></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                    <button type="submmit" class="btn btn-primary btn-lg btn-block">提出</button>
+                </form>
+              </div>
             </div>
         </div>
     </div>
