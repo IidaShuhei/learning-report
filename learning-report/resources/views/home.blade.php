@@ -49,55 +49,20 @@
                     </div>
                     @endif
 
-                    {{-- 教員ログイン後  --}}
+                    {{--  教員ログイン後  --}}
                     @if($user->status === 2)
-                    <h5>３年２組<span class="pl-5"><a href="{{ url('/teacher/detail') }}">飯田先生</a></span></h5>
-                    <br>
-                    <table class="table table-hover table-bordered">
-                        <tbody>
-                            <tr>
-                                <td><a href="{{ url('/student/detail') }}">平岡ゆり</a></td>
-                                <td><a href="{{ url('/student/detail') }}">平岡ゆり</a></td>
-                                <td><a href="{{ url('/student/detail') }}">平岡ゆり</a></td>
-                                <td><a href="{{ url('/student/detail') }}">平岡ゆり</a></td>
-                                <td><a href="{{ url('/student/detail') }}">平岡ゆり</a></td>
-                                <td><a href="{{ url('/student/detail') }}">平岡ゆり</a></td>
-                            </tr>
-                            <tr>
-                                <td>山田太郎</td>
-                                <td>山田太郎</td>
-                                <td>山田太郎</td>
-                                <td>山田太郎</td>
-                                <td>山田太郎</td>
-                                <td>山田太郎</td>
-                            </tr>
-                            <tr>
-                                <td>佐藤小次郎</td>
-                                <td>佐藤小次郎</td>
-                                <td>佐藤小次郎</td>
-                                <td>佐藤小次郎</td>
-                                <td>佐藤小次郎</td>
-                                <td>佐藤小次郎</td>
-                            </tr>
-                            <tr>
-                                <td>葉加瀬りな</td>
-                                <td>葉加瀬りな</td>
-                                <td>葉加瀬りな</td>
-                                <td>葉加瀬りな</td>
-                                <td>葉加瀬りな</td>
-                                <td>葉加瀬りな</td>
-                            </tr>
-                            <tr>
-                                <td>山岡さやか</td>
-                                <td>山岡さやか</td>
-                                <td>山岡さやか</td>
-                                <td>山岡さやか</td>
-                                <td>山岡さやか</td>
-                                <td>山岡さやか</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                    <br>
+                    <div class="pb-3">
+                        <a href="{{ url('/teacher/index') }}" class="btn btn-primary btn-lg btn-block">教員一覧</a>
+                    </div>
+                    <div class="pb-3">
+                        <a href="{{ url('/class/detail') }}" class="btn btn-primary btn-lg btn-block">生徒一覧</a>
+                    </div>
+                    <div class="pb-3">
+                        <a href="{{ url('/teacher/to_register_test') }}" class="btn btn-primary btn-lg btn-block">中間期末考査登録</a>
+                    </div>
+                    <div class="pb-3">
+                        <a href="{{ url('/to_create_message') }}" class="btn btn-primary btn-lg btn-block">新規連絡作成</a>
+                    </div><br>
                     <div class="news">
                         <h3>教員からの連絡</h3>
                         <table class="table table-borderless">
@@ -183,11 +148,13 @@
                     </div>
                     @endif
 
-                    @if($user->status === 4)
-                    @endif
                 </div>
             </div>
+            @endif
+            
         </div>
+      </div>
     </div>
+  </div>
 </div>
 @endsection
