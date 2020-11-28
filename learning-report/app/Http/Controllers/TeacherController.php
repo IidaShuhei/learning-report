@@ -87,4 +87,14 @@ class TeacherController extends Controller
         return redirect('/home')->with('success','送信が完了しました');
     }
 
+    /**
+     * 中間期末考査登録画面へ遷移.
+     *
+     * @return view
+     */
+    public function toRegisterTest(Request $request)
+    {
+        return view('teacher.to_register_test');
+    }
+
 }

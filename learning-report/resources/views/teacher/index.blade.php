@@ -64,7 +64,7 @@
                     </tbody>
                   </table>
                 </div>
-
+                
               {{--  Modal  --}}
               @component('component.modal')
                 @slot('modal_id', 'deleteTeacher')

@@ -22,6 +22,7 @@ Route::prefix('/teacher')->group(function () {
     Route::get('/to_info_view', 'TeacherController@toInfoView');
     Route::get('/create_info', 'TeacherController@createInfo');
     Route::get('/submit_message', 'TeacherController@submitMessage');
+    Route::get('/to_register_test', 'TeacherController@toRegisterTest');
 });
 
 //生徒
