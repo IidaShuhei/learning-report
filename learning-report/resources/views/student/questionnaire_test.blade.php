@@ -9,7 +9,7 @@
                     <h5>授業アンケート入力</h5>
                 </div>
                 <div class="card-body">
-                    <form method="POST" action="{{ url('/student/questionnaire_class') }}">
+                    <form method="POST" action="{{ url('/student/report_create') }}">
                         {{csrf_field()}}
                         <div class="form-group row">
                             <div class="col-3">
@@ -20,12 +20,12 @@
                                 </select>
                             </div>
                         </div>
-                        <table class="table table-hover">
-                            <thead class="bg-primary text-light">
+                        <table class="table table-hover table-bordered">
+                            <thead class="bg-light ">
                                 <tr>
-                                    <th scope="col">科目</th>
-                                    <th scope="col">よかったところ</th>
-                                    <th scope="col">取り入れて欲しいところ</th>
+                                    <th style="text-align:center;" scope="col">科目</th>
+                                    <th style="text-align: center" scope="col">よかったところ</th>
+                                    <th style="text-align: center" scope="col">取り入れて欲しいところ</th>
                                 </tr>
                             </thead>
                             <tbody>

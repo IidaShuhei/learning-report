@@ -8,7 +8,7 @@
                 <h5 class="card-header">学習チェックシート履歴</h5>
                 <div class="card-body">
                     <table class="table table-hover">
-                        <thead class="bg-primary text-light">
+                        <thead class="bg-light">
                             <tr>
                                 <th scope="col">日付</th>
                                 <th scope="col">勉強したこと</th>

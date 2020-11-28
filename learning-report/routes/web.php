@@ -33,12 +33,13 @@ Route::prefix('/student')->group(function () {
     Route::get('/profile', 'StudentController@profile');
     Route::get('/report_index', 'StudentController@reportIndex');
     Route::get('/report_detail', 'StudentController@reportDetail');
-    Route::get('/questionnaire_class', 'StudentController@questionnaireClass');
-    Route::post('/questionnaire_class', 'StudentController@questionnaireClassStore');
+    Route::get('/report_create', 'StudentController@questionnaireClass');
+    Route::post('/report_create', 'StudentController@questionnaireClassStore');
     Route::get('/questionnaire_test', 'StudentController@questionnaireTest');
     Route::post('/questionnaire_test', 'StudentController@questionnaireTestStore');
     Route::get('/questionnaire_express', 'StudentController@questionnaireExpress');
     Route::post('/questionnaire_express', 'StudentController@questionnaireExpressStore');
+    Route::get('/message', 'StudentController@message');
 });
 
 //クラス

@@ -8,7 +8,7 @@
                 <h5 class="card-header">2020/11/18</h5>
                 <div class="card-body">
                     <table class="table table-hover">
-                        <thead class="bg-primary text-light">
+                        <thead class="bg-light">
                             <tr>
                                 <th scope="col">勉強したこと</th>
                                 <th scope="col">勉強時間</th>

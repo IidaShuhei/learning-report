@@ -35,7 +35,7 @@ class StudentController extends Controller
     public function edit(Request $request)
     {
         // $student = Student::find($id)
-        return redirect('/home')->with('success','編集が完了しました');
+        return redirect('/home')->with('success', '編集が完了しました');
         // return view('admin.student_edit', ["student" => $student]);
     }
 
@@ -48,7 +48,7 @@ class StudentController extends Controller
     public function delete(Request $request)
     {
         // $student = Student::find($id)
-        return redirect('/home')->with('success','編集が完了しました');
+        return redirect('/home')->with('success', '編集が完了しました');
         // return view('admin.student_edit', ["student" => $student]);
     }
 
@@ -114,7 +114,7 @@ class StudentController extends Controller
 
         // $report = Report::where('student.id','=',$request->id);
 
-        return view('student.questionnaire_class', ["student" => $student]);
+        return view('student.report_create', ["student" => $student]);
     }
 
     /**
@@ -195,5 +195,19 @@ class StudentController extends Controller
         // $report = Report::where('student.id','=',$request->id);
 
         return  redirect()->action('HomeController@index')->with('success', '登録が完了しました');
+    }
+
+    /**
+     * メッセージを表示する.
+     *
+     * @param Request $request
+     * @return view
+     */
+
+    public function message(Request $request)
+    {
+        $message = "各クラスのクラス委員はノートを11/20の放課後までに集めて飯田の机に置いておいてください。当日忘れた人は家に取りに行ってください。よろしくお願いします。";
+
+        return   view('student.message', ["message" => $message]);
     }
 }

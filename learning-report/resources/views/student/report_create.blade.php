@@ -9,7 +9,7 @@
                     <h5>学習チェックシート</h5>
                 </div>
                 <div class="card-body">
-                    <form method="POST" action="{{ url('/student/questionnaire_class') }}">
+                    <form method="POST" action="{{ url('/student/report_create') }}">
                         {{csrf_field()}}
                         <div class="form-group row">
                             <div class="col-3">
